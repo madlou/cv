@@ -32,6 +32,8 @@ body {
 
 #header > .section {
     position: fixed;
+    border: 0;
+    border-bottom: 1px solid #ddd;
 }
 
 h1 {
@@ -42,6 +44,8 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 0 1rem;
+    white-space: nowrap;
+    height: 3rem;
 }
 
 h2 {
@@ -68,4 +72,10 @@ p {
     .mobile-hide {
       display: none;
     }
-  }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
