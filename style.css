@@ -70,12 +70,27 @@ p {
 
 @media only screen and (max-width: 850px) {
     .mobile-hide {
-      display: none;
+        display: none;
     }
 }
 
 @media only screen and (max-width: 500px) {
     h1 {
         font-size: 2rem;
+    }
+}
+
+@media print {
+
+    #main {
+        padding-top: 1em;
+    }
+
+    #header > .section {
+        position: relative;
+    }
+
+    .section {
+        border: none;
     }
 }
